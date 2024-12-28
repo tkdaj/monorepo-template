@@ -1,0 +1,14 @@
+{
+  "name": "web-atoms",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "react": "^19.0.0",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "types": "*"
+  }
+}

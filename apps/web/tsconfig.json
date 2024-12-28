@@ -1,0 +1,4 @@
+{
+  "extends": "../../tsconfig.web-base.json",
+  "include": ["src", ".storybook/preview.tsx", "../../packages/components/web"]
+}

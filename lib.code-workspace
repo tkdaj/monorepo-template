@@ -1,0 +1,54 @@
+// The defaults defined here are applied when the workspace is opened.
+// If an individual wants to override a setting for their local development,
+// they can just make a non-tracked .vscode/settings.json, which will act as overrides
+{
+  "folders": [{ "path": "." }],
+  "extensions": {
+    "recommendations": [
+      // frontend extensions
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint"
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      // {
+      //   "type": "chrome",
+      //   "request": "launch",
+      //   "name": "ui",
+      //   "url": "http://localhost:3000",
+      //   "webRoot": "${workspaceFolder}/apps/web",
+      // },
+    ],
+    "compounds": []
+  },
+  "settings": {
+    "files.associations": {
+      ".eslintrc": "jsonc",
+      ".prettierrc": "jsonc",
+      ".eslintignore": "ignore",
+      ".prettierignore": "ignore",
+      ".code-workspace": "jsonc"
+    },
+    "files.exclude": {},
+    // https://stackoverflow.com/questions/74642723/how-do-i-force-vs-code-to-always-use-my-workspaces-version-of-typescript-for-al
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "typescript.validate.enable": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "typescript.preferences.importModuleSpecifier": "shortest",
+    "typescript.preferences.importModuleSpecifierEnding": "minimal",
+    "typescript.preferences.includePackageJsonAutoImports": "on",
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "eslint.workingDirectories": ["./"],
+    "[javascript][typescript][typescriptreact][javascriptreact][json][jsonc][css][html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+      }
+    }
+  }
+}

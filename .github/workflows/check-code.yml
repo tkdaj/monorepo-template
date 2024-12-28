@@ -1,0 +1,17 @@
+name: Check code
+
+on:
+  push:
+    branches: ["main"]
+
+  # Allows workflow to manuallly be run from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Code
+        uses: actions/setup-node@v3
+      - run: npm ci
+      - run: npm run check-code

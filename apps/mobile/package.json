@@ -1,0 +1,16 @@
+{
+  "name": "mobile-storybook",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "imports": {
+    "#atoms/*": "./../../packages/components/mobile/atoms/*"
+  },
+  "scripts": {},
+  "dependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "types": "*"
+  }
+}
