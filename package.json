@@ -15,7 +15,7 @@
     "check-code": "run-p lint typecheck",
     "build:web": "npm run build -w web-app",
     "storybook:web": "npm run storybook -w web-app",
-    "build-storybook:web": "npm run storybook-build -w web-app"
+    "build-storybook:web": "npm run build-storybook -w web-app"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
