@@ -1,4 +1,4 @@
-# A template for a monoreport with a component library/design system
+# A template for a monorepo with a component library/design system
 
 TODO:
 
