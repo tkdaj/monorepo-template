@@ -27,9 +27,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/configure-pages@v3
-      - name: Build Storybook
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
-      - run: npm ci
+        with:
+          node-version: "22"
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use correct Yarn version
+        run: corepack prepare --activate
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
       - run: npm run build-storybook:web
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -12,7 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Check Code
+
+      - name: Setup Node.js
         uses: actions/setup-node@v3
-      - run: npm ci
-      - run: npm run check-code
+        with:
+          node-version: "22"
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use correct Yarn version
+        run: corepack prepare --activate
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Check code
+        run: yarn check-code
