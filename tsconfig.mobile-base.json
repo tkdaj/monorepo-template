@@ -20,7 +20,8 @@
     // ],
     "jsx": "react-native",
     "paths": {
-      "atoms/*": ["./packages/components/mobile/atoms/*"]
+      "atoms/*": ["./packages/components/mobile/atoms/*"],
+      "design-system": ["./packages/design-system/mobile/index.ts"]
     }
   }
 }

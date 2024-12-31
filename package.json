@@ -1,21 +1,21 @@
 {
-  "name": "lib",
+  "name": "monorepo-template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "workspaces": [
     "apps/*",
-    "packages/*",
-    "packages/components/web/*",
-    "packages/components/mobile/*"
+    "packages/**/*"
   ],
   "scripts": {
     "lint": "eslint .",
     "typecheck": "tsc",
     "check-code": "run-p lint typecheck",
+    "dev:web": "npm run dev -w web-app",
     "build:web": "npm run build -w web-app",
     "storybook:web": "npm run storybook -w web-app",
-    "build-storybook:web": "npm run build-storybook -w web-app"
+    "build-storybook:web": "npm run build-storybook -w web-app",
+    "list-workspaces": "npm ls -ws"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -33,5 +33,9 @@
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"
-  }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "yarn@3.6.3+sha512.d432ab8b22b89cb8b46649ebaf196159b0c1870904224771d75fdf8b55490aaa5de4d9f028deb0425f1513bff7843e97b9d117103795a23b12d2e7c1cedcf50f"
 }

@@ -1,9 +1,9 @@
 # A template for a monorepo with a component library/design system
 
-TODO:
+Current TODOs:
 
 1. add prettier
-2. add theme configuration
-3. add styled-components providers
-4. make sure all typescript projects within the monorepo import and use ts-reset
-5. github workflow file to build and push storybook
+2. improve theme config options (add spacing, update color palettes, add more variants, etc)
+3. improve ts config -- right now the reset.d.ts and styled-theme.d.ts files defined
+   here: packages/types/src are not imported/recognized within the other ts projects.
+4. Update Button atom to not just be a placeholder atom and add more atoms

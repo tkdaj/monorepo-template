@@ -1,5 +1,6 @@
 import { Preview } from "@storybook/react";
 import { StrictMode } from "react";
+import { DesignSystemProvider } from "../src/theme";
 
 type Parameters = NonNullable<Preview["parameters"]>;
 
@@ -129,13 +130,12 @@ const preview: Preview = {
     (Story, context) => {
       const currentTheme =
         context.parameters.theme ?? context.globals.theme ?? defaultTheme;
-
-      console.log("CURRENT THEME", currentTheme);
       return (
-        // TODO: add theme provider from styled-components
-        <StrictMode>
-          <Story />
-        </StrictMode>
+        <DesignSystemProvider theme={currentTheme}>
+          <StrictMode>
+            <Story />
+          </StrictMode>
+        </DesignSystemProvider>
       );
     },
   ],
