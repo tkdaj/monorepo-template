@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "typecheck": "tsc",
+    "typecheck": "tsc -b ./tsconfig.json",
     "check-code": "run-p lint typecheck",
     "dev:web": "npm run dev -w @monorepo-template/web-app",
     "build:web": "npm run build -w @monorepo-template/web-app",
