@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "atoms/Button";
+import { Button } from "@monorepo-template/atoms/Button";
 import { DesignSystemProvider } from "./theme";
 
 const themeOptions = ["light", "dark"] as const;

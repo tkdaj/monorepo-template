@@ -1,4 +1,8 @@
 {
   "extends": "../../tsconfig.mobile-base.json",
-  "include": ["stories", "../../packages/components/mobile"]
+  "include": [
+    "stories",
+    "../../packages/components/mobile",
+    "../../packages/design-system/mobile"
+  ]
 }

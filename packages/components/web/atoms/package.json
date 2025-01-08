@@ -1,5 +1,5 @@
 {
-  "name": "atoms-web",
+  "name": "@monorepo-template/atoms-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +8,6 @@
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
-    "types": "workspace:*"
+    "@monorepo-template/types": "workspace:*"
   }
 }

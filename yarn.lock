@@ -650,6 +650,85 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monorepo-template/atoms-mobile@workspace:packages/components/mobile/atoms":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/atoms-mobile@workspace:packages/components/mobile/atoms"
+  dependencies:
+    "@monorepo-template/types": "workspace:*"
+    react: ^19.0.0
+    styled-components: ^6.1.13
+  languageName: unknown
+  linkType: soft
+
+"@monorepo-template/atoms-web@workspace:*, @monorepo-template/atoms-web@workspace:packages/components/web/atoms":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/atoms-web@workspace:packages/components/web/atoms"
+  dependencies:
+    "@monorepo-template/types": "workspace:*"
+    react: ^19.0.0
+    styled-components: ^6.1.13
+  languageName: unknown
+  linkType: soft
+
+"@monorepo-template/design-system-mobile@workspace:packages/design-system/mobile":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/design-system-mobile@workspace:packages/design-system/mobile"
+  dependencies:
+    "@monorepo-template/types": "workspace:*"
+    styled-components: ^6.1.13
+  languageName: unknown
+  linkType: soft
+
+"@monorepo-template/design-system-web@workspace:*, @monorepo-template/design-system-web@workspace:packages/design-system/web":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/design-system-web@workspace:packages/design-system/web"
+  dependencies:
+    "@monorepo-template/types": "workspace:*"
+    styled-components: ^6.1.13
+  languageName: unknown
+  linkType: soft
+
+"@monorepo-template/mobile-storybook@workspace:apps/mobile":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/mobile-storybook@workspace:apps/mobile"
+  dependencies:
+    "@monorepo-template/types": "workspace:*"
+    react: ^19.0.0
+  languageName: unknown
+  linkType: soft
+
+"@monorepo-template/types@workspace:*, @monorepo-template/types@workspace:packages/types":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/types@workspace:packages/types"
+  dependencies:
+    styled-components: ^6.1.13
+  languageName: unknown
+  linkType: soft
+
+"@monorepo-template/web-app@workspace:apps/web":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/web-app@workspace:apps/web"
+  dependencies:
+    "@chromatic-com/storybook": ^3.2.3
+    "@monorepo-template/atoms-web": "workspace:*"
+    "@monorepo-template/design-system-web": "workspace:*"
+    "@monorepo-template/types": "workspace:*"
+    "@storybook/addon-a11y": ^8.4.7
+    "@storybook/addon-essentials": ^8.4.7
+    "@storybook/addon-interactions": ^8.4.7
+    "@storybook/blocks": ^8.4.7
+    "@storybook/react": ^8.4.7
+    "@storybook/react-vite": ^8.4.7
+    "@storybook/test": ^8.4.7
+    prop-types: ^15.8.1
+    react: ^19.0.0
+    react-dom: ^19.0.0
+    storybook: ^8.4.7
+    storybook-addon-pseudo-states: ^4.0.2
+    vite-tsconfig-paths: ^5.1.4
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1748,26 +1827,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"atoms-mobile@workspace:packages/components/mobile/atoms":
-  version: 0.0.0-use.local
-  resolution: "atoms-mobile@workspace:packages/components/mobile/atoms"
-  dependencies:
-    react: ^19.0.0
-    styled-components: ^6.1.13
-    types: "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"atoms-web@workspace:*, atoms-web@workspace:packages/components/web/atoms":
-  version: 0.0.0-use.local
-  resolution: "atoms-web@workspace:packages/components/web/atoms"
-  dependencies:
-    react: ^19.0.0
-    styled-components: ^6.1.13
-    types: "workspace:*"
-  languageName: unknown
-  linkType: soft
-
 "available-typed-arrays@npm:^1.0.7":
   version: 1.0.7
   resolution: "available-typed-arrays@npm:1.0.7"
@@ -2195,24 +2254,6 @@ __metadata:
   checksum: 8679b850e1a3d0ebbc46ee780d5df7b478c23f335887464023a631d1b9af051ad4a6595a44220f9ff8ff95a8ddccf019b5ad778a976fd7bbf77383d36f412f90
   languageName: node
   linkType: hard
-
-"design-system-mobile@workspace:packages/design-system/mobile":
-  version: 0.0.0-use.local
-  resolution: "design-system-mobile@workspace:packages/design-system/mobile"
-  dependencies:
-    styled-components: ^6.1.13
-    types: "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"design-system-web@workspace:*, design-system-web@workspace:packages/design-system/web":
-  version: 0.0.0-use.local
-  resolution: "design-system-web@workspace:packages/design-system/web"
-  dependencies:
-    styled-components: ^6.1.13
-    types: "workspace:*"
-  languageName: unknown
-  linkType: soft
 
 "doctrine@npm:^3.0.0":
   version: 3.0.0
@@ -3844,15 +3885,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mobile-storybook@workspace:apps/mobile":
-  version: 0.0.0-use.local
-  resolution: "mobile-storybook@workspace:apps/mobile"
-  dependencies:
-    react: ^19.0.0
-    types: "workspace:*"
-  languageName: unknown
-  linkType: soft
-
 "monorepo-template@workspace:.":
   version: 0.0.0-use.local
   resolution: "monorepo-template@workspace:."
@@ -5295,14 +5327,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"types@workspace:*, types@workspace:packages/types":
-  version: 0.0.0-use.local
-  resolution: "types@workspace:packages/types"
-  dependencies:
-    styled-components: ^6.1.13
-  languageName: unknown
-  linkType: soft
-
 "typescript-eslint@npm:^8.18.2":
   version: 8.19.0
   resolution: "typescript-eslint@npm:8.19.0"
@@ -5513,30 +5537,6 @@ __metadata:
   checksum: 6786a42805dc7f277462ace1890cdf07562fefd79ef00e15e5e7eca64b3ef90589b768cf44622f4b6fa336ef167e6f7611d0a3cc81fe25798a1eb7e1b3d659b6
   languageName: node
   linkType: hard
-
-"web-app@workspace:apps/web":
-  version: 0.0.0-use.local
-  resolution: "web-app@workspace:apps/web"
-  dependencies:
-    "@chromatic-com/storybook": ^3.2.3
-    "@storybook/addon-a11y": ^8.4.7
-    "@storybook/addon-essentials": ^8.4.7
-    "@storybook/addon-interactions": ^8.4.7
-    "@storybook/blocks": ^8.4.7
-    "@storybook/react": ^8.4.7
-    "@storybook/react-vite": ^8.4.7
-    "@storybook/test": ^8.4.7
-    atoms-web: "workspace:*"
-    design-system-web: "workspace:*"
-    prop-types: ^15.8.1
-    react: ^19.0.0
-    react-dom: ^19.0.0
-    storybook: ^8.4.7
-    storybook-addon-pseudo-states: ^4.0.2
-    types: "workspace:*"
-    vite-tsconfig-paths: ^5.1.4
-  languageName: unknown
-  linkType: soft
 
 "webpack-virtual-modules@npm:^0.6.2":
   version: 0.6.2

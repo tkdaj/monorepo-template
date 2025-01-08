@@ -11,10 +11,10 @@
     "lint": "eslint .",
     "typecheck": "tsc",
     "check-code": "run-p lint typecheck",
-    "dev:web": "npm run dev -w web-app",
-    "build:web": "npm run build -w web-app",
-    "storybook:web": "npm run storybook -w web-app",
-    "build-storybook:web": "npm run build-storybook -w web-app",
+    "dev:web": "npm run dev -w @monorepo-template/web-app",
+    "build:web": "npm run build -w @monorepo-template/web-app",
+    "storybook:web": "npm run storybook -w @monorepo-template/web-app",
+    "build-storybook:web": "npm run build-storybook -w @monorepo-template/web-app",
     "list-workspaces": "npm ls -ws"
   },
   "devDependencies": {

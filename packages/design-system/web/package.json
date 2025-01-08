@@ -1,10 +1,10 @@
 {
-  "name": "design-system-web",
+  "name": "@monorepo-template/design-system-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "devDependencies": {
-    "types": "workspace:*"
+    "@monorepo-template/types": "workspace:*"
   },
   "dependencies": {
     "styled-components": "^6.1.13"

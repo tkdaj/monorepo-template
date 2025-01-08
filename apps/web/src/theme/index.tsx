@@ -2,7 +2,7 @@ import { darkColors } from "./colors/dark";
 import { lightColors } from "./colors/light";
 import { breakpoints } from "./breakpoints";
 import { typography } from "./typography";
-import { DesignSystemProvider as LibDesignSystemProvider } from "design-system";
+import { DesignSystemProvider as LibDesignSystemProvider } from "@monorepo-template/design-system";
 import { useMemo } from "react";
 
 const themes = {

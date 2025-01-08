@@ -1,4 +1,4 @@
-import type { DesignSystem } from "types";
+import type { DesignSystem } from "@monorepo-template/types";
 
 export const lightColors = {
   content: {

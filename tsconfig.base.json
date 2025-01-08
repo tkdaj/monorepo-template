@@ -13,6 +13,10 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+    // for info on typeRoots and types here: https://github.com/microsoft/TypeScript/issues/22217
+    // Used information from the comment on July 25, 2022 for this setup
+    "typeRoots": ["packages/types", "node_modules/@types"],
+    "types": ["vite-env", "react", "node", "reset", "styled-theme"],
 
     /* Linting */
     "strict": true

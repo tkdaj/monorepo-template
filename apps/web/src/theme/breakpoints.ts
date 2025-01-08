@@ -1,7 +1,7 @@
 // Using bootstrap breakpoints as defaults
 // ref: https://getbootstrap.com/docs/5.0/layout/breakpoints/
 
-import { DesignSystem } from "types";
+import type { DesignSystem } from "@monorepo-template/types";
 
 export const breakpoints = {
   xs: "0",
