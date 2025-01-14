@@ -19,7 +19,7 @@
     "storybook:web": "npm run storybook -w @monorepo-template/web-app",
     "build-storybook:web": "npm run build-storybook -w @monorepo-template/web-app",
     "list-workspaces": "npm ls -ws",
-    "postinstall": "husky",
+    "postinstall": "husky && husky install",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   },
