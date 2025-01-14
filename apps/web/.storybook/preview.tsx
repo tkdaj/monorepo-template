@@ -1,73 +1,73 @@
-import { Preview } from "@storybook/react";
-import { StrictMode } from "react";
-import { DesignSystemProvider } from "../src/theme";
+import { Preview } from '@storybook/react';
+import { StrictMode } from 'react';
+import { DesignSystemProvider } from '../src/theme';
 
-type Parameters = NonNullable<Preview["parameters"]>;
+type Parameters = NonNullable<Preview['parameters']>;
 
 const viewports = {
   iPhone: {
-    name: "iPhone 14 Pro Max",
+    name: 'iPhone 14 Pro Max',
     styles: {
-      width: "430px",
-      height: "932px",
+      width: '430px',
+      height: '932px',
     },
   },
   iPadMini: {
-    name: "iPad Mini",
+    name: 'iPad Mini',
     styles: {
-      width: "768px",
-      height: "1024px",
+      width: '768px',
+      height: '1024px',
     },
   },
   iPadAir: {
-    name: "iPad Air",
+    name: 'iPad Air',
     styles: {
-      width: "820px",
-      height: "1180px",
+      width: '820px',
+      height: '1180px',
     },
   },
   iPadPro: {
-    name: "iPad Pro",
+    name: 'iPad Pro',
     styles: {
-      width: "1024px",
-      height: "1366px",
+      width: '1024px',
+      height: '1366px',
     },
   },
   desktopSmall: {
-    name: "Small Desktop",
+    name: 'Small Desktop',
     styles: {
-      width: "992px",
-      height: "100%",
+      width: '992px',
+      height: '100%',
     },
   },
   desktopMedium: {
-    name: "Medium Desktop",
+    name: 'Medium Desktop',
     styles: {
-      width: "1200px",
-      height: "100%",
+      width: '1200px',
+      height: '100%',
     },
   },
   desktopLarge: {
-    name: "Large Desktop",
+    name: 'Large Desktop',
     styles: {
-      width: "1400px",
-      height: "100%",
+      width: '1400px',
+      height: '100%',
     },
   },
   desktopFull: {
-    name: "Desktop Full Width",
+    name: 'Desktop Full Width',
     styles: {
-      width: "100%",
-      height: "100%",
+      width: '100%',
+      height: '100%',
     },
   },
 } as const;
 
 const parameters = {
-  layout: "fullscreen",
+  layout: 'fullscreen',
   options: {
     storySort: {
-      order: ["atoms"],
+      order: ['atoms'],
     },
   },
   controls: {
@@ -105,7 +105,7 @@ const parameters = {
   // },
 } as const satisfies Parameters;
 
-const defaultTheme = "light";
+const defaultTheme = 'light';
 
 const preview: Preview = {
   parameters,
@@ -114,22 +114,21 @@ const preview: Preview = {
   },
   globalTypes: {
     theme: {
-      description: "theme",
+      description: 'theme',
       toolbar: {
-        title: "Theme",
+        title: 'Theme',
         dynamicTitle: true,
         showName: true,
         items: [
-          { value: "light", title: "Light Theme" },
-          { value: "dark", title: "Dark Theme" },
+          { value: 'light', title: 'Light Theme' },
+          { value: 'dark', title: 'Dark Theme' },
         ],
       },
     },
   },
   decorators: [
     (Story, context) => {
-      const currentTheme =
-        context.parameters.theme ?? context.globals.theme ?? defaultTheme;
+      const currentTheme = context.parameters.theme ?? context.globals.theme ?? defaultTheme;
       return (
         <DesignSystemProvider theme={currentTheme}>
           <StrictMode>
@@ -139,7 +138,7 @@ const preview: Preview = {
       );
     },
   ],
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default preview;

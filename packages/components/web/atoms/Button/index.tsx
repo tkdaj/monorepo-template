@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Button = styled.button.attrs(({ type = "button", ...props }) => ({
+export const Button = styled.button.attrs(({ type = 'button', ...props }) => ({
   ...props,
   type,
 }))`

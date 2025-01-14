@@ -1,7 +1,7 @@
-import type { DesignSystem } from "@monorepo-template/types";
+import type { DesignSystem } from '@monorepo-template/types';
 
 export const typography = {
-  fontFamily: "",
+  fontFamily: '',
   letterSpacing: {},
   weights: {},
   sizes: {},

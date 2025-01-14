@@ -7,8 +7,8 @@
     "recommendations": [
       // frontend extensions
       "esbenp.prettier-vscode",
-      "dbaeumer.vscode-eslint"
-    ]
+      "dbaeumer.vscode-eslint",
+    ],
   },
   "launch": {
     "version": "0.2.0",
@@ -21,7 +21,7 @@
       //   "webRoot": "${workspaceFolder}/apps/web",
       // },
     ],
-    "compounds": []
+    "compounds": [],
   },
   "settings": {
     "files.associations": {
@@ -29,7 +29,7 @@
       ".prettierrc": "jsonc",
       ".eslintignore": "ignore",
       ".prettierignore": "ignore",
-      ".code-workspace": "jsonc"
+      ".code-workspace": "jsonc",
     },
     "files.exclude": {},
     // https://stackoverflow.com/questions/74642723/how-do-i-force-vs-code-to-always-use-my-workspaces-version-of-typescript-for-al
@@ -47,8 +47,8 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.formatOnSave": true,
       "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "always"
-      }
-    }
-  }
+        "source.fixAll.eslint": "always",
+      },
+    },
+  },
 }

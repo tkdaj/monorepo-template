@@ -1,5 +1,5 @@
-import { ThemeProvider } from "styled-components";
-import type { DesignSystem } from "@monorepo-template/types";
+import { ThemeProvider } from 'styled-components';
+import type { DesignSystem } from '@monorepo-template/types';
 
 // TODO: update this to allow user's of the design system to just directly access
 // theme.colors.primary, for example, and return the color string instead of the object.
@@ -75,9 +75,6 @@ interface DesignSystemProviderProps
   extends React.PropsWithChildren<{
     themeConfig: DesignSystem.ThemeConfig;
   }> {}
-export function DesignSystemProvider({
-  children,
-  themeConfig,
-}: DesignSystemProviderProps) {
+export function DesignSystemProvider({ children, themeConfig }: DesignSystemProviderProps) {
   return <ThemeProvider theme={themeConfig}>{children}</ThemeProvider>;
 }

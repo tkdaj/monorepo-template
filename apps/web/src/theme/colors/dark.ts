@@ -1,50 +1,50 @@
-import type { DesignSystem } from "@monorepo-template/types";
+import type { DesignSystem } from '@monorepo-template/types';
 export const darkColors = {
   content: {
     primary: {
-      color: "#AAAAAA",
+      color: '#AAAAAA',
       state: {
-        disabled: "#999999",
-        hover: "#444444",
+        disabled: '#999999',
+        hover: '#444444',
       },
     },
     secondary: {
-      color: "#CCCCCC",
+      color: '#CCCCCC',
       state: {
-        disabled: "#AAAAAA",
-        hover: "#EEEEEE",
+        disabled: '#AAAAAA',
+        hover: '#EEEEEE',
       },
     },
   },
   background: {
     primary: {
-      color: "#444444",
+      color: '#444444',
       state: {
-        disabled: "#444444",
-        hover: "#AAAAAA",
+        disabled: '#444444',
+        hover: '#AAAAAA',
       },
     },
     secondary: {
-      color: "#333333",
+      color: '#333333',
       state: {
-        disabled: "#555555",
-        hover: "#222222",
+        disabled: '#555555',
+        hover: '#222222',
       },
     },
   },
   border: {
     primary: {
-      color: "#222222",
+      color: '#222222',
       state: {
-        disabled: "#999999",
-        hover: "#444444",
+        disabled: '#999999',
+        hover: '#444444',
       },
     },
     secondary: {
-      color: "#333333",
+      color: '#333333',
       state: {
-        disabled: "#555555",
-        hover: "#222222",
+        disabled: '#555555',
+        hover: '#222222',
       },
     },
   },

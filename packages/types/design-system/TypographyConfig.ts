@@ -1,4 +1,4 @@
-import { POJO } from "@monorepo-template/types";
+import { POJO } from '@monorepo-template/types';
 
 export interface TypographyConfig {
   // TODO: update weights and letter spacing to have

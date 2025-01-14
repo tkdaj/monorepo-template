@@ -1,19 +1,19 @@
-import { fn } from "@storybook/test";
+import { fn } from '@storybook/test';
 
-import { Button } from ".";
+import { Button } from '.';
 
 export default {
-  title: "atoms/Button",
+  title: 'atoms/Button',
   component: Button,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   args: { onClick: fn() },
 };
 
 export const Default = {
   args: {
-    children: "A Button",
+    children: 'A Button',
   },
 };

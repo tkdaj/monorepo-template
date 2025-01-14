@@ -1,3 +1,3 @@
-export function Typography(props: React.ComponentProps<"p">) {
+export function Typography(props: React.ComponentProps<'p'>) {
   return <p {...props} />;
 }
