@@ -3,7 +3,10 @@
   "include": [
     "src",
     ".storybook/preview.tsx",
+    // TODO: export all three of these from packages/component/web, then only include one here?
     "../../packages/components/web",
+    "../../packages/components/types",
+    "../../packages/components/shared",
     "../../packages/design-system/web"
   ]
 }

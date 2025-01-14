@@ -1,3 +1,5 @@
+export type ColorVariant = 'primary' | 'secondary';
+
 interface ColorConfig {
   color: string;
   state: {
@@ -14,16 +16,7 @@ interface ColorConfig {
 }
 
 export interface ColorsConfig {
-  content: {
-    primary: ColorConfig;
-    secondary: ColorConfig;
-  };
-  background: {
-    primary: ColorConfig;
-    secondary: ColorConfig;
-  };
-  border: {
-    primary: ColorConfig;
-    secondary: ColorConfig;
-  };
+  content: Record<ColorVariant, ColorConfig>;
+  background: Record<ColorVariant, ColorConfig>;
+  border: Record<ColorVariant, ColorConfig>;
 }

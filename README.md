@@ -2,5 +2,5 @@
 
 Current TODOs:
 
-1. Update Button atom to not just be a placeholder atom and add more atoms
+1. Add react-native app to project
 2. improve theme config options (add spacing, update color palettes, add more variants, etc)

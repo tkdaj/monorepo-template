@@ -1,4 +1,11 @@
 {
   "extends": "../../tsconfig.mobile-base.json",
-  "include": ["stories", "../../packages/components/mobile", "../../packages/design-system/mobile"]
+  "include": [
+    "stories",
+    // TODO: export all three of these from packages/component/mobile, then only include one here?
+    "../../packages/components/mobile",
+    "../../packages/components/types",
+    "../../packages/components/shared",
+    "../../packages/design-system/mobile"
+  ]
 }

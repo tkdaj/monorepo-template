@@ -1,12 +1,21 @@
 import styled from 'styled-components';
+import type { ButtonCommonProps } from '../../../types';
 
-export const Button = styled.button.attrs(({ type = 'button', ...props }) => ({
-  ...props,
-  type,
-}))`
-  padding-inline: 20px;
-  padding-block: 12px;
-  font-size: 20px;
-  color: ${({ theme }) => theme.colors.content.primary.color};
-  background-color: ${({ theme }) => theme.colors.background.primary.color};
-`;
+import type { DesignSystem } from '@monorepo-template/types';
+import { defaultButtonStyles, getSizeStyles, getVariantStyles } from '../../../shared/ButtonStyles';
+
+export interface ButtonProps extends React.ComponentProps<typeof Button> {}
+
+export const Button = styled.button.attrs<ButtonCommonProps>(
+  ({ type = 'button', $size = 'md', $variant = 'primary', ...props }) => ({
+    ...props,
+    $size,
+    $variant,
+    type,
+  })
+)(({ theme, $variant, $size }) => ({
+  ...defaultButtonStyles,
+  // we can safely use `as` here since we are defaulting undefined values above within the `attrs` function
+  ...getVariantStyles(theme)[$variant as DesignSystem.ColorVariant],
+  ...getSizeStyles(theme)[$size as Required<ButtonCommonProps>['$size']],
+}));
