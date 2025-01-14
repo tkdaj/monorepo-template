@@ -1,3 +1,4 @@
+// extend this tsconfig for react-specific projects
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {

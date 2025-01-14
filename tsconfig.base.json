@@ -1,3 +1,4 @@
+// extend this tsconfig when you don't need react/react-native support, and just standard TS
 {
   "compilerOptions": {
     "composite": true,
