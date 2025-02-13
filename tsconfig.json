@@ -8,6 +8,7 @@
     { "path": "./packages/components/mobile/tsconfig.json" },
     { "path": "./packages/design-system/mobile/tsconfig.json" },
     { "path": "./packages/design-system/web/tsconfig.json" },
-    { "path": "./packages/types/tsconfig.json" }
+    { "path": "./packages/types/tsconfig.json" },
+    { "path": "./packages/constants/tsconfig.json" }
   ]
 }

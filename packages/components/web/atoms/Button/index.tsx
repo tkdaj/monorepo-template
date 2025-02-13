@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import type { ButtonCommonProps } from '../../../types';
 
 import type { DesignSystem } from '@monorepo-template/types';
 import { defaultButtonStyles, getSizeStyles, getVariantStyles } from '../../../shared/ButtonStyles';
+import type { ButtonCommonProps } from '../../../types';
 
 export interface ButtonProps extends React.ComponentProps<typeof Button> {}
 

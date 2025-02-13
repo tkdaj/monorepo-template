@@ -670,6 +670,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@monorepo-template/constants@workspace:packages/constants":
+  version: 0.0.0-use.local
+  resolution: "@monorepo-template/constants@workspace:packages/constants"
+  dependencies:
+    styled-components: ^6.1.13
+  languageName: unknown
+  linkType: soft
+
 "@monorepo-template/design-system-mobile@workspace:packages/design-system/mobile":
   version: 0.0.0-use.local
   resolution: "@monorepo-template/design-system-mobile@workspace:packages/design-system/mobile"
@@ -789,6 +797,41 @@ __metadata:
   version: 0.1.1
   resolution: "@pkgr/core@npm:0.1.1"
   checksum: 6f25fd2e3008f259c77207ac9915b02f1628420403b2630c92a07ff963129238c9262afc9e84344c7a23b5cc1f3965e2cd17e3798219f5fd78a63d144d3cceba
+  languageName: node
+  linkType: hard
+
+"@radix-ui/primitive@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@radix-ui/primitive@npm:1.1.1"
+  checksum: d7e819177590108b74139809d52ec043c0962ae3513e947998be575fb13639c5c1c091896ddcf1d6a22a777d44ade59d22c2019ce9099607fc62a5de09c59707
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-use-callback-ref@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@radix-ui/react-use-callback-ref@npm:1.1.0"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 2ec7903c67e3034b646005556f44fd975dc5204db6885fc58403e3584f27d95f0b573bc161de3d14fab9fda25150bf3b91f718d299fdfc701c736bd0bd2281fa
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-use-controllable-state@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@radix-ui/react-use-controllable-state@npm:1.1.0"
+  dependencies:
+    "@radix-ui/react-use-callback-ref": 1.1.0
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: a6c167cf8eb0744effbeab1f92ea6c0ad71838b222670c0488599f28eecd941d87ac1eed4b5d3b10df6dc7b7b2edb88a54e99d92c2942ce3b21f81d5c188f32d
   languageName: node
   linkType: hard
 
@@ -4150,6 +4193,8 @@ __metadata:
   resolution: "monorepo-template@workspace:."
   dependencies:
     "@eslint/js": ^9.17.0
+    "@radix-ui/primitive": ^1.1.1
+    "@radix-ui/react-use-controllable-state": ^1.1.0
     "@total-typescript/ts-reset": ^0.6.1
     "@types/node": ^22.10.2
     "@types/react": ^19.0.2

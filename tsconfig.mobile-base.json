@@ -22,6 +22,8 @@
     "jsx": "react-native",
     "paths": {
       "@monorepo-template/atoms/*": ["./packages/components/mobile/atoms/*"],
+      "@monorepo-template/constants": ["./packages/constants/index.ts"],
+      "@monorepo-template/shared/*": ["./packages/components/shared/*"],
       "@monorepo-template/design-system": ["./packages/design-system/mobile/index.ts"]
     }
   }

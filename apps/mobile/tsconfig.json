@@ -1,11 +1,13 @@
 {
   "extends": "../../tsconfig.mobile-base.json",
+  // TODO: these should be references to other projects instead of includes
   "include": [
     "stories",
     // TODO: export all three of these from packages/component/mobile, then only include one here?
     "../../packages/components/mobile",
     "../../packages/components/types",
     "../../packages/components/shared",
+    "../../packages/constants",
     "../../packages/design-system/mobile"
   ]
 }

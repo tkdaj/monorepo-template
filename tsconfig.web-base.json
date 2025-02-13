@@ -7,6 +7,8 @@
     "jsx": "react-jsx",
     "paths": {
       "@monorepo-template/atoms/*": ["./packages/components/web/atoms/*"],
+      "@monorepo-template/shared/*": ["./packages/components/shared/*"],
+      "@monorepo-template/constants": ["./packages/constants/index.ts"],
       "@monorepo-template/design-system": ["./packages/design-system/web/index.ts"]
     }
   }

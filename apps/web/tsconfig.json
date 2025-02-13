@@ -7,6 +7,7 @@
     "../../packages/components/web",
     "../../packages/components/types",
     "../../packages/components/shared",
+    "../../packages/constants",
     "../../packages/design-system/web"
   ]
 }

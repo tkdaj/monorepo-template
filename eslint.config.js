@@ -27,6 +27,7 @@ export default tseslint.config(
       '@typescript-eslint/no-namespace': 'off',
       '@typescript-eslint/prefer-namespace-keyword': 'off',
       '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      'react-refresh/only-export-components': 'off',
     },
   }
 );

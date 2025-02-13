@@ -1,0 +1,12 @@
+{
+  "name": "@monorepo-template/constants",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "styled-components": "^6.1.13"
+  }
+}
